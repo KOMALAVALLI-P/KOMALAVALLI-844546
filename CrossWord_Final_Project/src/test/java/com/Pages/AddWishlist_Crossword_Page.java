@@ -62,11 +62,12 @@ public class AddWishlist_Crossword_Page {
 		driver.findElement(wishlist).click();
 		Thread.sleep(3000);
 	}
+	//For Screenshot operation
 	public void screenshot(String path) throws IOException
 	{
 		TakesScreenshot ts =((TakesScreenshot)driver);
-		File SrcFile=ts.getScreenshotAs(org.openqa.selenium.OutputType.FILE);
-		FileUtils.copyFile(SrcFile, new File(path));
+		File SrcFile=ts.getScreenshotAs(org.openqa.selenium.OutputType.FILE);//To get screenshot of output type File
+		FileUtils.copyFile(SrcFile, new File(path));//Copying from srcfile to new file
 	}
 		
 	//For Logout operation

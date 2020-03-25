@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.Excel.Excel_Utility;
-import com.mongodb.MapReduceCommand.OutputType;
+
 
 
 public class Rate_And_Review__Crossword_Page {
@@ -74,8 +74,8 @@ public class Rate_And_Review__Crossword_Page {
 		public void screenshot(String path) throws IOException
 		{
 			TakesScreenshot ts =((TakesScreenshot)driver);
-			File SrcFile=ts.getScreenshotAs(org.openqa.selenium.OutputType.FILE);
-			FileUtils.copyFile(SrcFile, new File(path));
+			File SrcFile=ts.getScreenshotAs(org.openqa.selenium.OutputType.FILE);//To get screenshot of output type File
+			FileUtils.copyFile(SrcFile, new File(path));//Copying into new file
 		}
 	
 	//For Logout operation
