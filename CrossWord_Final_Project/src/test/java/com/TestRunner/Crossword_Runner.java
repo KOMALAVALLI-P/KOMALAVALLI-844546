@@ -25,6 +25,12 @@ public class Crossword_Runner {
 	  public static void extendReport()
 	{
 		 Reporter.loadXMLConfig("src/test/resources/extent-config.xml");
+		 Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
+		 Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
+		 Reporter.setSystemInfo("Machine", "Windows 10"+"64 Bit");
+		 Reporter.setSystemInfo("Selenium", "3.141.59");
+		 Reporter.setSystemInfo("Maven", "4.0.0");
+		 Reporter.setSystemInfo("Java version", "1.8.0_131");
 	}
 }
 

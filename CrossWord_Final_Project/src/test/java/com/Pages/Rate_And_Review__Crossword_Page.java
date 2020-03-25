@@ -23,6 +23,7 @@ public class Rate_And_Review__Crossword_Page {
 	By bookName = By.xpath("//*[@id=\"content-slot\"]/div[2]/div/div[3]/ul/div/div/li[4]/div/div[2]/span[1]/a");
 	By pincode = By.name("zipcode");
 	By submit1 = By.className("button");
+	//Rate and Review the book
 	By review = By.xpath("//*[@id=\"write-review\"]/a");
 	By rate = By.xpath("//*[@id=\"rating-4\"]");
 	By message = By.id("review_detail_review");
@@ -30,15 +31,15 @@ public class Rate_And_Review__Crossword_Page {
 	//To Launch the application
 	public void LaunchBrowser() 
 	{ 
-		System.setProperty("webdriver.chrome.driver","src\\test\\resources\\Driver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		System.setProperty("webdriver.chrome.driver","src\\test\\resources\\Driver\\chromedriver.exe");//To set chromedriver as a browser to launch application
+		driver = new ChromeDriver();//Create object to access chromedriver
+		driver.manage().window().maximize();//To manage and maximize the window
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);//To manage Timeunits in window
 	}
 	//To Get Crossword application
 	public void CrossWord_application()
 	{
-		driver.get("https://www.crossword.in/");
+		driver.get("https://www.crossword.in/");//To get Testing url
 		System.out.println(driver.getTitle());
 	}
 	//For login operation

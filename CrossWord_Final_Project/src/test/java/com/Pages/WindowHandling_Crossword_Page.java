@@ -27,10 +27,10 @@ public class WindowHandling_Crossword_Page {
 	//To Launch the application
 	public void LaunchBrowser() 
 	{ 
-		System.setProperty("webdriver.chrome.driver","src\\test\\resources\\Driver\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		System.setProperty("webdriver.chrome.driver","src\\test\\resources\\Driver\\chromedriver.exe");//To set chromedriver as a browser to launch application
+		driver = new ChromeDriver();//Create object to access chromedriver
+		driver.manage().window().maximize();//To manage and maximize the window
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);//To manage the timeunits of the window
 	}
 	//To Get Crossword application
 	public void CrossWord_application()
@@ -52,22 +52,22 @@ public class WindowHandling_Crossword_Page {
 		Thread.sleep(5000);
 		driver.findElement(stationery).click();
 			
-		Set<String> winHandles = driver.getWindowHandles();
-		System.out.println("The number of windows handles are" +winHandles.size());
+		Set<String> winHandles = driver.getWindowHandles();//To get the window
+		System.out.println("The number of windows handles are" +winHandles.size());//To display number of windows handled
 		for(String winHandle:winHandles)
 		{
-			driver.switchTo().window(winHandle);
-		}
-		String title = driver.getTitle();
-		System.out.println("The page title is : " +title);
+			driver.switchTo().window(winHandle);//Switches to particular window
+		}//Loop for switching
+		String title = driver.getTitle();//To get the title of the window handled
+		System.out.println("The page title is : " +title);//To print title of the handled window
 			
-		Set<String> winHandles2 = driver.getWindowHandles();
+		Set<String> winHandles2 = driver.getWindowHandles();//To get the window 
 		System.out.println("The number of windows handles are" +winHandles2.size());
 		for(String winHandle2:winHandles2)
 		{
-			driver.switchTo().window(winHandle2);
+			driver.switchTo().window(winHandle2);//Switches to particular window
 			driver.close();
-		}	
+		}//Loop for switching	
 	}
 	
 }
