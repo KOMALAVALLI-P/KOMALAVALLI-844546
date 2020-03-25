@@ -2,6 +2,7 @@ package com.StepDefinition;
 
 import java.io.IOException;
 
+import com.Excel.Excel_Utility;
 import com.Pages.WindowHandling_Crossword_Page;
 
 import cucumber.api.java.en.Given;
@@ -10,7 +11,7 @@ import cucumber.api.java.en.When;
 
 public class WindowHandling_Crossword_Steps {
 
-	
+	Excel_Utility data = new Excel_Utility();
 	WindowHandling_Crossword_Page switches = new WindowHandling_Crossword_Page();
 	
 	@Given("^The User launch the Chrome browser application$")
@@ -28,7 +29,10 @@ public class WindowHandling_Crossword_Steps {
 	@Then("^User login  using the email and password$")
 	public void user_login_using_the_email_and_password() throws IOException 
 	{
-		switches.LoginDetails();
+		for(int i=1;i<=1;i++)
+		{
+		switches.LoginDetails(i);
+		}
 	}
 
 	@Then("^The user switches to different window$")

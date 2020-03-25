@@ -12,7 +12,6 @@ Examples:
 
 |emailId	                      |password  	|
 |komskoms@gmail.com		          |koms29    	|
-|komala@gmail.com	              |komala98  	|
 
 @TC02_New_Registeration_and_acess_Help
 Scenario: To check if the user is able to register new user and access help

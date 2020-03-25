@@ -1,11 +1,17 @@
 package com.Pages;
 
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.Excel.Excel_Utility;
 
 
 
@@ -40,19 +46,27 @@ public class AddWishlist_Crossword_Page {
 	}
 	
 	//For login operation
-	public void LoginDetails() 
+	public void LoginDetails(int a) throws IOException
 	{
-    	driver.findElement(login).click();
-		driver.findElement(email).sendKeys("komalavalli1998@gmail.com"); 
-		driver.findElement(password).sendKeys("koms@2905");
+		Excel_Utility data = new Excel_Utility();//Object to access excel
+		driver.findElement(login).click();
+		driver.findElement(email).sendKeys(data.excel_username1(a)); //Passing values for email
+		driver.findElement(password).sendKeys(data.excel_password1(a));//Passing values for password
 		driver.findElement(loginButton).click();
 	}
 	//Adding books to the wishlist
-	public void wishlist()
+	public void wishlist() throws InterruptedException
 	{
 		driver.findElement(bestSellers).click();
 		driver.findElement(book).click();
 		driver.findElement(wishlist).click();
+		Thread.sleep(3000);
+	}
+	public void screenshot(String path) throws IOException
+	{
+		TakesScreenshot ts =((TakesScreenshot)driver);
+		File SrcFile=ts.getScreenshotAs(org.openqa.selenium.OutputType.FILE);
+		FileUtils.copyFile(SrcFile, new File(path));
 	}
 		
 	//For Logout operation

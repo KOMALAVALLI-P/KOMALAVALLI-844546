@@ -1,12 +1,15 @@
 package com.Pages;
 
 
+import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.Excel.Excel_Utility;
 
 
 
@@ -39,11 +42,12 @@ public class WindowHandling_Crossword_Page {
 		System.out.println(driver.getTitle());
 	}
 	//For login operation
-	public void LoginDetails() 
+	public void LoginDetails(int a) throws IOException
 	{
-    	driver.findElement(login).click();
-		driver.findElement(email).sendKeys("komalavalli1998@gmail.com"); 
-		driver.findElement(password).sendKeys("koms@2905");
+		Excel_Utility data = new Excel_Utility();//Object to access excel
+		driver.findElement(login).click();
+		driver.findElement(email).sendKeys(data.excel_username1(a)); //Passing values for email
+		driver.findElement(password).sendKeys(data.excel_password1(a));//Passing values for password
 		driver.findElement(loginButton).click();
 	}
 	//For Window Handling operation

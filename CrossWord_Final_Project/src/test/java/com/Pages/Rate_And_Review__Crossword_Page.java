@@ -1,11 +1,18 @@
 package com.Pages;
 
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.Excel.Excel_Utility;
+import com.mongodb.MapReduceCommand.OutputType;
 
 
 public class Rate_And_Review__Crossword_Page {
@@ -43,15 +50,16 @@ public class Rate_And_Review__Crossword_Page {
 		System.out.println(driver.getTitle());
 	}
 	//For login operation
-	public void LoginDetails() 
+	public void LoginDetails(int a) throws IOException
 	{
-    	driver.findElement(login).click();
-		driver.findElement(email).sendKeys("komalavalli1998@gmail.com"); 
-		driver.findElement(password).sendKeys("koms@2905");
+		Excel_Utility data = new Excel_Utility();//Object to access excel
+		driver.findElement(login).click();
+		driver.findElement(email).sendKeys(data.excel_username1(a)); //Passing values for email
+		driver.findElement(password).sendKeys(data.excel_password1(a));//Passing values for password
 		driver.findElement(loginButton).click();
 	}
 	//Updating pincode and review the book
-	public void Rate_And_Review()
+	public void Rate_And_Review() throws InterruptedException
 	{
 		driver.findElement(bestSellers).click();
 		driver.findElement(bookName).click();
@@ -60,7 +68,15 @@ public class Rate_And_Review__Crossword_Page {
 		driver.findElement(review).click();
 		driver.findElement(rate).click();
 		driver.findElement(message).sendKeys("Good one to gain knowledge");
+	    Thread.sleep(3000);
 	}
+	//To take the screenshot
+		public void screenshot(String path) throws IOException
+		{
+			TakesScreenshot ts =((TakesScreenshot)driver);
+			File SrcFile=ts.getScreenshotAs(org.openqa.selenium.OutputType.FILE);
+			FileUtils.copyFile(SrcFile, new File(path));
+		}
 	
 	//For Logout operation
 	public void LogoutDetails()

@@ -1,6 +1,9 @@
 package com.StepDefinition;
 
 
+import java.io.IOException;
+
+import com.Excel.Excel_Utility;
 import com.Pages.AddWishlist_Crossword_Page;
 
 import cucumber.api.java.en.Given;
@@ -9,8 +12,9 @@ import cucumber.api.java.en.When;
 
 public class AddWishlist_Crossword_Steps {
 
-	
+	Excel_Utility data = new Excel_Utility();
 	AddWishlist_Crossword_Page add = new AddWishlist_Crossword_Page();
+	
 	@Given("^The User launches the Chrome application$")
 	public void the_User_launches_the_Chrome_application() 
 	{
@@ -26,13 +30,17 @@ public class AddWishlist_Crossword_Steps {
 	@Then("^User logins using email and password$")
 	public void user_logins_using_email_and_password() throws Throwable 
 	{
-		add.LoginDetails();
+		for(int i=1;i<=1;i++)
+		{
+		add.LoginDetails(i);
+		}
 	}
 
 	@Then("^The user add the book in the wishlist$")
-	public void the_user_add_the_book_in_the_wishlist() 
+	public void the_user_add_the_book_in_the_wishlist() throws IOException, InterruptedException 
 	{
 	    add.wishlist();
+	    add.screenshot("src\\test\\resources\\Screenshot\\Wishlist.png");
 	}
 
 	@Then("^User Logouts the page$")
