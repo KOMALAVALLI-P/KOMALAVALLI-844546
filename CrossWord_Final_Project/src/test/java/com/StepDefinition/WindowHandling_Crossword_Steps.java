@@ -9,7 +9,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class WindowHandling_Crossword_Steps {
+public class WindowHandling_Crossword_Steps
+{
 
 	Excel_Utility data = new Excel_Utility();
 	WindowHandling_Crossword_Page switches = new WindowHandling_Crossword_Page();
@@ -31,7 +32,7 @@ public class WindowHandling_Crossword_Steps {
 	{
 		for(int i=1;i<=1;i++)
 		{
-		switches.LoginDetails(i);
+		   switches.LoginDetails(i);
 		}
 	}
 

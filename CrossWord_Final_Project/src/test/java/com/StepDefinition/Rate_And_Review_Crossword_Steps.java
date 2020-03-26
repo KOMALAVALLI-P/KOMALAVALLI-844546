@@ -24,8 +24,8 @@ public class Rate_And_Review_Crossword_Steps {
 	@When("^Opening the Crossword Home page$")
 	public void opening_the_Crossword_Home_page() throws IOException 
 	{
-	    update.CrossWord_application();
-	    update.screenshot("src\\test\\resources\\Screenshot\\Homepage.png");
+	   update.CrossWord_application();
+	   update.screenshot("src\\test\\resources\\Screenshot\\Homepage.png");
 	}
 
 	@Then("^User logging in using email and password$")
@@ -33,26 +33,26 @@ public class Rate_And_Review_Crossword_Steps {
 	{
 		for(int i=1;i<=1;i++)
 		{
-		update.LoginDetails(i);
+		   update.LoginDetails(i);
 		}
 	}
 
 	@Then("^User add and update pincode and review the book$")
 	public void the_user_add_books_with_quantity() throws InterruptedException, IOException 
 	{
-	  update.Rate_And_Review();
-	  update.screenshot("src\\test\\resources\\Screenshot\\RateandReview.png");
+	   update.Rate_And_Review();
+	   update.screenshot("src\\test\\resources\\Screenshot\\RateandReview.png");
 	}
 
 	@Then("^User Logging out the page$")
 	public void user_Logging_out_the_page() 
 	{
-	    update.LogoutDetails();
+	   update.LogoutDetails();
 	}
 
 	@Then("^Closing the browser$")
 	public void closing_the_browser() throws InterruptedException
 	{
-	  update.Closepage();
+	   update.Closepage();
 	}
 }

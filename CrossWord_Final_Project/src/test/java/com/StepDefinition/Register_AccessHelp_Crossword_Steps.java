@@ -1,16 +1,14 @@
 package com.StepDefinition;
 
 
-import org.junit.Assert;
-
 import com.Pages.Register_AccessHelp_Crossword_Page;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class Register_AccessHelp_Crossword_Steps {
-	
+public class Register_AccessHelp_Crossword_Steps
+{
 	
 	Register_AccessHelp_Crossword_Page access = new Register_AccessHelp_Crossword_Page();
 	@Given("^The user launch the browser application$")
@@ -28,18 +26,18 @@ public class Register_AccessHelp_Crossword_Steps {
 	@Then("^User register the login details$")
 	public void user_register_the_login_details() throws InterruptedException 
 	{
-	  access.register();
+	   access.register();
 	}
 
 	@Then("^User access the help tab$")
 	public void user_update_the_password() throws InterruptedException 
 	{
-	  access.help();
+	   access.help();
 	}
 
 	@Then("^User Close the browser$")
 	public void user_Close_the_browser() throws Throwable {
-	  access.Closepage();
+	   access.Closepage();
 	}
 
 

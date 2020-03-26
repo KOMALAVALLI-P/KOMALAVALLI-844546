@@ -9,9 +9,8 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class Excel_Utility {
-
-	
+public class Excel_Utility 
+{
 
 			//To read and return the username
 			public  String excel_username1(int a) throws IOException

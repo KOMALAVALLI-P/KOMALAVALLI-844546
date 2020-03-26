@@ -1,17 +1,18 @@
 package com.Pages;
 
-import java.util.List;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Register_AccessHelp_Crossword_Page {
+public class Register_AccessHelp_Crossword_Page 
+{
 
-WebDriver driver;
+    WebDriver driver;
+    
     //Login and Logout
 	By login = By.xpath("//*[@id=\"hd\"]/div/div/div/div[1]/div/div[2]/div[1]/a[2]");
 	By email = By.id("user_session_email");
@@ -61,8 +62,8 @@ WebDriver driver;
 		JavascriptExecutor js = (JavascriptExecutor) driver;//To perform Scrolling functionality
 		js.executeScript("window.scrollBy(0,2000)");//To scroll by 2000units
 		Thread.sleep(3000);
-	    driver.findElement(editDetails).click();
-	    Thread.sleep(3000);
+		driver.findElement(editDetails).click();
+		Thread.sleep(3000);
 		
 	}
 	
