@@ -39,7 +39,7 @@ WebDriver driver;
 	}
 
 	//For registeration
-	public int register() throws InterruptedException
+	public void register() throws InterruptedException
 	{
 		driver.findElement(login).click();
 		Thread.sleep(1000);
@@ -50,11 +50,7 @@ WebDriver driver;
 		driver.findElement(By.id("customer_user_attributes_additional_detail_dob")).sendKeys("29/05/1998");
 		Thread.sleep(1000);
 		driver.findElement(By.id("customer_gender_female")).click();	
-		//driver.findElement(By.id("customer_submit")).click();
-		
-		List <WebElement> s=driver.findElements(login);
-		int size = s.size();
-		return size;
+		driver.findElement(By.id("customer_submit")).click();
 		
 	}
 	//Access Help Tab using Scrolling Functionality
