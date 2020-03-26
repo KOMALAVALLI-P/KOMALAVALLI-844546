@@ -68,7 +68,7 @@ public class Rate_And_Review__Crossword_Page {
 		Thread.sleep(2000);
 		driver.findElement(rate).click();
 		driver.findElement(message).sendKeys("Good one to gain knowledge");
-	    Thread.sleep(3000);
+		Thread.sleep(2000);
 	}
 	//To take the screenshot
 		public void screenshot(String path) throws IOException

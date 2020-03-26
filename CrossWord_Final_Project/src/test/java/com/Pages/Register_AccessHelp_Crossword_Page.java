@@ -59,7 +59,7 @@ WebDriver driver;
 		driver.findElement(help).click();
 		Thread.sleep(3000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;//To perform Scrolling functionality
-	    js.executeScript("window.scrollBy(0,2000)");//To scroll by 2000units
+		js.executeScript("window.scrollBy(0,2000)");//To scroll by 2000units
 	    Thread.sleep(1000);
 	    driver.findElement(editDetails).click();
 	    Thread.sleep(3000);
