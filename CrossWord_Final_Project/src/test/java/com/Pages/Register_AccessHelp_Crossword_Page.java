@@ -1,10 +1,12 @@
 package com.Pages;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Register_AccessHelp_Crossword_Page {
@@ -37,18 +39,23 @@ WebDriver driver;
 	}
 
 	//For registeration
-	public void register() throws InterruptedException
+	public int register() throws InterruptedException
 	{
 		driver.findElement(login).click();
 		Thread.sleep(1000);
 		driver.findElement(By.id("customer_user_attributes_name")).sendKeys("Koms");
-		driver.findElement(By.id("customer_user_attributes_email")).sendKeys("ninbesh@gmail.com");
-		driver.findElement(By.id("customer_user_attributes_password")).sendKeys("inbesh19");
-		driver.findElement(By.id("customer_user_attributes_password_confirmation")).sendKeys("inbesh19");
+		driver.findElement(By.id("customer_user_attributes_email")).sendKeys("komsyas1329@gmail.com");
+		driver.findElement(By.id("customer_user_attributes_password")).sendKeys("preethi29");
+		driver.findElement(By.id("customer_user_attributes_password_confirmation")).sendKeys("preethi29");
 		driver.findElement(By.id("customer_user_attributes_additional_detail_dob")).sendKeys("29/05/1998");
 		Thread.sleep(1000);
 		driver.findElement(By.id("customer_gender_female")).click();	
-		driver.findElement(By.id("customer_submit")).click();
+		//driver.findElement(By.id("customer_submit")).click();
+		
+		List <WebElement> s=driver.findElements(login);
+		int size = s.size();
+		return size;
+		
 	}
 	//Access Help Tab using Scrolling Functionality
 	public void help() throws InterruptedException

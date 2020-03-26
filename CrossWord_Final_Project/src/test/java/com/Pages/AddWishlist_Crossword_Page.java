@@ -4,7 +4,6 @@ package com.Pages;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TakesScreenshot;
@@ -57,10 +56,13 @@ public class AddWishlist_Crossword_Page {
 	//Adding books to the wishlist
 	public void wishlist() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		driver.findElement(bestSellers).click();
+		Thread.sleep(2000);
 		driver.findElement(book).click();
+		Thread.sleep(5000);
 		driver.findElement(wishlist).click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	}
 	//For Screenshot operation
 	public void screenshot(String path) throws IOException

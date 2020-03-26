@@ -12,6 +12,12 @@ Examples:
 
 |emailId	                      |password  	|
 |komskoms@gmail.com		          |koms29    	|
+|komala@gmail.com		          |komala5    	|
+|valli@gmail.com		          |valli@98   	|
+|preethi@gmail.com		          |preethi295@ 	|
+|komsraj@gmail.com		          |raj@17   	|
+|komsbaby@gmail.com		          |baby@10   	|
+|babyraj@gmail.com		          |babyraj@1017 |
 
 @TC02_New_Registeration_and_acess_Help
 Scenario: To check if the user is able to register new user and access help

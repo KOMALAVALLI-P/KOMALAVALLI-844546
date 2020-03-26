@@ -14,7 +14,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import com.Excel.Excel_Utility;
 
 
-
 public class Rate_And_Review__Crossword_Page {
 
     WebDriver driver;
@@ -66,6 +65,7 @@ public class Rate_And_Review__Crossword_Page {
 		driver.findElement(pincode).sendKeys("605013");
 		driver.findElement(submit1).click();
 		driver.findElement(review).click();
+		Thread.sleep(2000);
 		driver.findElement(rate).click();
 		driver.findElement(message).sendKeys("Good one to gain knowledge");
 	    Thread.sleep(3000);

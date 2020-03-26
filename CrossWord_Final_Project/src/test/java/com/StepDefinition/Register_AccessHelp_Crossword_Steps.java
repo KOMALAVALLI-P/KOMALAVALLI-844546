@@ -1,6 +1,8 @@
 package com.StepDefinition;
 
 
+import org.junit.Assert;
+
 import com.Pages.Register_AccessHelp_Crossword_Page;
 
 import cucumber.api.java.en.Given;
@@ -24,9 +26,23 @@ public class Register_AccessHelp_Crossword_Steps {
 	}
 
 	@Then("^User register the login details$")
-	public void user_register_the_login_details() throws InterruptedException 
+	public int user_register_the_login_details() throws InterruptedException 
 	{
 	  access.register();
+	  int book = access.register();
+	    System.out.println("Register:"+book);
+	    Boolean b;
+	    if(book==1)
+	    {
+	    	b=false;
+	    	System.out.println("Already Register using this Email");
+	    	Assert.assertTrue(b);
+	    }
+	    else
+	    {
+	    	System.out.println("New Registeration is available");
+	    }
+	    return book;
 	}
 
 	@Then("^User access the help tab$")
