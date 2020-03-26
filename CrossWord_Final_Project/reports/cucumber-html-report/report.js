@@ -165,14 +165,14 @@ formatter.match({
   "location": "InvalidLogin_Crossword_Steps.the_User_launch_the_Chrome_application()"
 });
 formatter.result({
-  "duration": 10412283300,
+  "duration": 10501852600,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLogin_Crossword_Steps.open_the_Crossword_Home_page()"
 });
 formatter.result({
-  "duration": 4386698500,
+  "duration": 5079809700,
   "status": "passed"
 });
 formatter.match({
@@ -189,14 +189,14 @@ formatter.match({
   "location": "InvalidLogin_Crossword_Steps.user_login_using_invalid_email_and_password(String,String)"
 });
 formatter.result({
-  "duration": 5114209100,
+  "duration": 5040162600,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLogin_Crossword_Steps.close_the_browser()"
 });
 formatter.result({
-  "duration": 1121850100,
+  "duration": 1135668200,
   "status": "passed"
 });
 formatter.scenario({
@@ -245,14 +245,14 @@ formatter.match({
   "location": "InvalidLogin_Crossword_Steps.the_User_launch_the_Chrome_application()"
 });
 formatter.result({
-  "duration": 9557282500,
+  "duration": 9248980900,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLogin_Crossword_Steps.open_the_Crossword_Home_page()"
 });
 formatter.result({
-  "duration": 3188610200,
+  "duration": 3279044600,
   "status": "passed"
 });
 formatter.match({
@@ -269,14 +269,14 @@ formatter.match({
   "location": "InvalidLogin_Crossword_Steps.user_login_using_invalid_email_and_password(String,String)"
 });
 formatter.result({
-  "duration": 5122964700,
+  "duration": 4962171100,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLogin_Crossword_Steps.close_the_browser()"
 });
 formatter.result({
-  "duration": 1138048100,
+  "duration": 1077051300,
   "status": "passed"
 });
 formatter.scenario({
@@ -325,14 +325,14 @@ formatter.match({
   "location": "InvalidLogin_Crossword_Steps.the_User_launch_the_Chrome_application()"
 });
 formatter.result({
-  "duration": 9456973300,
+  "duration": 9290349700,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLogin_Crossword_Steps.open_the_Crossword_Home_page()"
 });
 formatter.result({
-  "duration": 2793261500,
+  "duration": 11347544800,
   "status": "passed"
 });
 formatter.match({
@@ -349,14 +349,14 @@ formatter.match({
   "location": "InvalidLogin_Crossword_Steps.user_login_using_invalid_email_and_password(String,String)"
 });
 formatter.result({
-  "duration": 5049963900,
+  "duration": 4976113100,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLogin_Crossword_Steps.close_the_browser()"
 });
 formatter.result({
-  "duration": 1121763600,
+  "duration": 1079784900,
   "status": "passed"
 });
 formatter.scenario({
@@ -405,14 +405,14 @@ formatter.match({
   "location": "InvalidLogin_Crossword_Steps.the_User_launch_the_Chrome_application()"
 });
 formatter.result({
-  "duration": 9415640900,
+  "duration": 9304329700,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLogin_Crossword_Steps.open_the_Crossword_Home_page()"
 });
 formatter.result({
-  "duration": 2541595900,
+  "duration": 8579767000,
   "status": "passed"
 });
 formatter.match({
@@ -429,14 +429,14 @@ formatter.match({
   "location": "InvalidLogin_Crossword_Steps.user_login_using_invalid_email_and_password(String,String)"
 });
 formatter.result({
-  "duration": 5160271200,
+  "duration": 5072337800,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLogin_Crossword_Steps.close_the_browser()"
 });
 formatter.result({
-  "duration": 1132375000,
+  "duration": 1080020100,
   "status": "passed"
 });
 formatter.scenario({
@@ -485,14 +485,14 @@ formatter.match({
   "location": "InvalidLogin_Crossword_Steps.the_User_launch_the_Chrome_application()"
 });
 formatter.result({
-  "duration": 9374502700,
+  "duration": 9322648700,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLogin_Crossword_Steps.open_the_Crossword_Home_page()"
 });
 formatter.result({
-  "duration": 3789227300,
+  "duration": 4550180300,
   "status": "passed"
 });
 formatter.match({
@@ -509,14 +509,14 @@ formatter.match({
   "location": "InvalidLogin_Crossword_Steps.user_login_using_invalid_email_and_password(String,String)"
 });
 formatter.result({
-  "duration": 5517973500,
+  "duration": 5092247700,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLogin_Crossword_Steps.close_the_browser()"
 });
 formatter.result({
-  "duration": 1101417900,
+  "duration": 1083676100,
   "status": "passed"
 });
 formatter.scenario({
@@ -565,14 +565,14 @@ formatter.match({
   "location": "InvalidLogin_Crossword_Steps.the_User_launch_the_Chrome_application()"
 });
 formatter.result({
-  "duration": 9403074700,
+  "duration": 9304768600,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLogin_Crossword_Steps.open_the_Crossword_Home_page()"
 });
 formatter.result({
-  "duration": 3358279000,
+  "duration": 6701915500,
   "status": "passed"
 });
 formatter.match({
@@ -589,14 +589,14 @@ formatter.match({
   "location": "InvalidLogin_Crossword_Steps.user_login_using_invalid_email_and_password(String,String)"
 });
 formatter.result({
-  "duration": 4927943700,
+  "duration": 5017006700,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLogin_Crossword_Steps.close_the_browser()"
 });
 formatter.result({
-  "duration": 1098120500,
+  "duration": 1074927700,
   "status": "passed"
 });
 formatter.scenario({
@@ -645,14 +645,14 @@ formatter.match({
   "location": "InvalidLogin_Crossword_Steps.the_User_launch_the_Chrome_application()"
 });
 formatter.result({
-  "duration": 9445529300,
+  "duration": 9253790900,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLogin_Crossword_Steps.open_the_Crossword_Home_page()"
 });
 formatter.result({
-  "duration": 2985315100,
+  "duration": 2551410600,
   "status": "passed"
 });
 formatter.match({
@@ -669,14 +669,14 @@ formatter.match({
   "location": "InvalidLogin_Crossword_Steps.user_login_using_invalid_email_and_password(String,String)"
 });
 formatter.result({
-  "duration": 5152935100,
+  "duration": 4959446700,
   "status": "passed"
 });
 formatter.match({
   "location": "InvalidLogin_Crossword_Steps.close_the_browser()"
 });
 formatter.result({
-  "duration": 1097048800,
+  "duration": 1071376600,
   "status": "passed"
 });
 formatter.scenario({
@@ -722,35 +722,35 @@ formatter.match({
   "location": "Register_AccessHelp_Crossword_Steps.the_user_launch_the_browser_application()"
 });
 formatter.result({
-  "duration": 9362476500,
+  "duration": 9293277700,
   "status": "passed"
 });
 formatter.match({
   "location": "Register_AccessHelp_Crossword_Steps.the_Crossword_browser_is_opened()"
 });
 formatter.result({
-  "duration": 2306806700,
+  "duration": 5955713100,
   "status": "passed"
 });
 formatter.match({
   "location": "Register_AccessHelp_Crossword_Steps.user_register_the_login_details()"
 });
 formatter.result({
-  "duration": 3487319300,
+  "duration": 3390095900,
   "status": "passed"
 });
 formatter.match({
   "location": "Register_AccessHelp_Crossword_Steps.user_update_the_password()"
 });
 formatter.result({
-  "duration": 8033217000,
+  "duration": 9999665400,
   "status": "passed"
 });
 formatter.match({
   "location": "Register_AccessHelp_Crossword_Steps.user_Close_the_browser()"
 });
 formatter.result({
-  "duration": 1089694800,
+  "duration": 1078938600,
   "status": "passed"
 });
 formatter.scenario({
@@ -801,42 +801,42 @@ formatter.match({
   "location": "AddWishlist_Crossword_Steps.the_User_launches_the_Chrome_application()"
 });
 formatter.result({
-  "duration": 9702933300,
+  "duration": 9211981300,
   "status": "passed"
 });
 formatter.match({
   "location": "AddWishlist_Crossword_Steps.openes_the_Crossword_Home_page()"
 });
 formatter.result({
-  "duration": 2119632500,
+  "duration": 6837798400,
   "status": "passed"
 });
 formatter.match({
   "location": "AddWishlist_Crossword_Steps.user_logins_using_email_and_password()"
 });
 formatter.result({
-  "duration": 1942361400,
+  "duration": 1583780700,
   "status": "passed"
 });
 formatter.match({
   "location": "AddWishlist_Crossword_Steps.the_user_add_the_book_in_the_wishlist()"
 });
 formatter.result({
-  "duration": 13775901600,
+  "duration": 14907597400,
   "status": "passed"
 });
 formatter.match({
   "location": "AddWishlist_Crossword_Steps.user_Logouts_the_page()"
 });
 formatter.result({
-  "duration": 1468627200,
+  "duration": 930494200,
   "status": "passed"
 });
 formatter.match({
   "location": "AddWishlist_Crossword_Steps.closes_the_browser()"
 });
 formatter.result({
-  "duration": 1102286400,
+  "duration": 1078487500,
   "status": "passed"
 });
 formatter.scenario({
@@ -887,42 +887,42 @@ formatter.match({
   "location": "Rate_And_Review_Crossword_Steps.the_User_launching_the_Chrome_application()"
 });
 formatter.result({
-  "duration": 9491100400,
+  "duration": 9304209100,
   "status": "passed"
 });
 formatter.match({
   "location": "Rate_And_Review_Crossword_Steps.opening_the_Crossword_Home_page()"
 });
 formatter.result({
-  "duration": 3039281700,
+  "duration": 19742883200,
   "status": "passed"
 });
 formatter.match({
   "location": "Rate_And_Review_Crossword_Steps.user_logging_in_using_email_and_password()"
 });
 formatter.result({
-  "duration": 1177915200,
+  "duration": 984646400,
   "status": "passed"
 });
 formatter.match({
   "location": "Rate_And_Review_Crossword_Steps.the_user_add_books_with_quantity()"
 });
 formatter.result({
-  "duration": 9897783000,
+  "duration": 8896227600,
   "status": "passed"
 });
 formatter.match({
   "location": "Rate_And_Review_Crossword_Steps.user_Logging_out_the_page()"
 });
 formatter.result({
-  "duration": 848678600,
+  "duration": 831880900,
   "status": "passed"
 });
 formatter.match({
   "location": "Rate_And_Review_Crossword_Steps.closing_the_browser()"
 });
 formatter.result({
-  "duration": 1090738800,
+  "duration": 1078402700,
   "status": "passed"
 });
 formatter.scenario({
@@ -963,28 +963,28 @@ formatter.match({
   "location": "WindowHandling_Crossword_Steps.the_User_launch_the_Chrome_browser_application()"
 });
 formatter.result({
-  "duration": 9313765600,
+  "duration": 9179154200,
   "status": "passed"
 });
 formatter.match({
   "location": "WindowHandling_Crossword_Steps.open_the_Crossword_browser_Home_page()"
 });
 formatter.result({
-  "duration": 3222786300,
+  "duration": 2748238300,
   "status": "passed"
 });
 formatter.match({
   "location": "WindowHandling_Crossword_Steps.user_login_using_the_email_and_password()"
 });
 formatter.result({
-  "duration": 1173901900,
+  "duration": 910723000,
   "status": "passed"
 });
 formatter.match({
   "location": "WindowHandling_Crossword_Steps.the_user_switches_to_different_window()"
 });
 formatter.result({
-  "duration": 9480166800,
+  "duration": 13429840800,
   "status": "passed"
 });
 });
