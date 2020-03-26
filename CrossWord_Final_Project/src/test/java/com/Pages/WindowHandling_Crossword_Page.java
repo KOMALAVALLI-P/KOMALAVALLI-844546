@@ -70,7 +70,7 @@ public class WindowHandling_Crossword_Page {
 		for(String winHandle2:winHandles2)
 		{
 			driver.switchTo().window(winHandle2);//Switches to particular window
-			driver.close();
+			driver.close();//To close the window
 		}//Loop for switching	
 	}
 	
